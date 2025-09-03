@@ -1,0 +1,244 @@
+#root {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  width: 100%;
+}
+.App {
+  width: 100%;
+  background-color: var(--white);
+  box-sizing: content-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: var(--white);
+  height: auto;
+  box-sizing: content-box;
+  max-width: 1550px;
+  align-self: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.flex-col-between {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col-between {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col-start {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.flex-row-start {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-row-around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row-end {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-row-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.nav-container {
+  flex: 1;
+  min-height: 60px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 4%;
+}
+.nav-container h1 {
+  font-size: 1.5rem;
+}
+.nav-container h4 {
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+.nav-container a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.875rem;
+  border: 1px solid var(--black);
+  height: auto;
+  padding: 4px 8px;
+
+  background-color: var(--secondary);
+}
+.nav-container a:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-submit {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  max-width: 255px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.input {
+  border: 1px solid white;
+  border-radius: 9px;
+  height: 42px;
+  width: 100%;
+  max-height: 50px;
+  padding-left: 10px;
+  background-color: var(--white);
+}
+.lbl-input {
+  font-size: 16px;
+  color: var(--white);
+  text-transform: capitalize;
+}
+.input:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
+.error-text {
+  color: var(--white);
+  font-size: 12px;
+  margin-top: 4px;
+  width: 100%;
+  text-align: left;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.modal-content {
+  background-color: var(--white);
+  padding: 0 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+  margin: 8px 0;
+}
+
+.footer-container {
+  min-height: 250px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 4%;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container h1 {
+    font-size: 14px;
+  }
+  .nav-container h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .nav-container a {
+    text-decoration: none;
+    color: var(--white);
+    height: auto;
+    font-size: 10px;
+    border: 1px solid var(--black);
+    padding: 8px 8px;
+    text-align: end;
+    background-color: var(--secondary);
+    border-radius: 8px;
+  }
+}

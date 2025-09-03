@@ -1,0 +1,53 @@
+.todo-table-title {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 24px;
+}
+.todo-table {
+  width: 90%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  margin: 16px 0;
+}
+
+.todo-table th,
+.todo-table td {
+  text-align: center;
+}
+
+.todo-table thead tr {
+  background-color: var(--primary);
+  border-top: 1px solid var(--ash);
+  border-bottom: 1px solid var(--ash);
+  color: var(--white);
+}
+.todo-table tbody tr {
+  color: var(--dark);
+}
+
+.todo-btn-edit {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.todo-btn-delete {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media only screen and (max-width: 600px) {
+  .todo-table-title {
+    align-self: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+}
